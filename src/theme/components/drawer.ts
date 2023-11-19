@@ -1,7 +1,12 @@
 import { ComponentStyleConfig } from '@chakra-ui/react';
 import { createMultiStyleConfigHelpers } from '@chakra-ui/styled-system';
 
-const helpers = createMultiStyleConfigHelpers(['dialog', 'header', 'body', 'footer']);
+const helpers = createMultiStyleConfigHelpers([
+  'dialog',
+  'header',
+  'body',
+  'footer',
+]);
 
 export const Drawer: ComponentStyleConfig = helpers.defineMultiStyleConfig({
   baseStyle: {},

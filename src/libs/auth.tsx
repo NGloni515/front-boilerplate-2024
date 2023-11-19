@@ -1,8 +1,6 @@
 import { AxiosResponse } from 'axios';
 import { configureAuth } from 'react-query-auth';
 
-import storage from '@/utils/storage';
-
 import {
   registerUser,
   RegisterCredentialsDTO,
@@ -11,6 +9,7 @@ import {
   getUser,
   AuthUser,
 } from '@/dashboard/auth';
+import storage from '@/utils/storage';
 
 async function handleResponse(response: AxiosResponse) {
   storage.setTokens(response.data);

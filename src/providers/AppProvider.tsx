@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import theme from '@/theme';
 
-import { AuthProvider } from '@/libs/auth';
+// import { AuthProvider } from '@/libs/auth';
 
 type Props = { children: React.ReactNode };
 
@@ -18,12 +18,12 @@ const ErrorFallback = () => {
       className="text-red-500 w-screen h-screen flex flex-col justify-center items-center"
       role="alert"
     >
-      <h2 className="text-lg font-semibold">Ooops, something went wrong :( </h2>
+      <h2 className="text-lg font-semibold">Error, reload the page: </h2>
       <Button
         className="mt-4"
         onClick={() => window.location.assign(window.location.origin)}
       >
-        Refresh
+        Reload
       </Button>
     </div>
   );
@@ -34,11 +34,11 @@ function AppProvider({ children }: Props) {
     <ChakraProvider theme={theme}>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <QueryClientProvider client={queryClient}>
-          <AuthProvider>
-            <HelmetProvider>
-              <Router>{children}</Router>
-            </HelmetProvider>
-          </AuthProvider>
+          {/* <AuthProvider> */}
+          <HelmetProvider>
+            <Router>{children}</Router>
+          </HelmetProvider>
+          {/* </AuthProvider> */}
         </QueryClientProvider>
       </ErrorBoundary>
     </ChakraProvider>

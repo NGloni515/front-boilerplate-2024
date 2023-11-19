@@ -1,9 +1,17 @@
-import { ListItem, ToastId, UnorderedList, useToast, UseToastOptions } from '@chakra-ui/react';
+import {
+  ListItem,
+  ToastId,
+  UnorderedList,
+  useToast,
+  UseToastOptions,
+} from '@chakra-ui/react';
 
 type Notification = NotificationFunctions & NotificationDefaultFunctions;
 
 type NotificationFunctions = {
-  [key in 'success' | 'error' | 'warning' | 'info']: (options: UseToastOptions) => ToastId;
+  [key in 'success' | 'error' | 'warning' | 'info']: (
+    options: UseToastOptions
+  ) => ToastId;
 };
 
 type NotificationDefaultFunctions = {

@@ -1,9 +1,8 @@
 import { cardAnatomy } from '@chakra-ui/anatomy';
 import { createMultiStyleConfigHelpers } from '@chakra-ui/react';
 
-const { definePartsStyle, defineMultiStyleConfig } = createMultiStyleConfigHelpers(
-  cardAnatomy.keys
-);
+const { definePartsStyle, defineMultiStyleConfig } =
+  createMultiStyleConfigHelpers(cardAnatomy.keys);
 
 export const Card = defineMultiStyleConfig({
   baseStyle: definePartsStyle({
@@ -34,7 +33,8 @@ export const Card = defineMultiStyleConfig({
     elevated: definePartsStyle({
       container: {
         borderRadius: '20px',
-        boxShadow: '0px 1px 5px rgba(0, 0, 0, 0.03), -2px 4px 15px rgba(0, 0, 0, 0.06)',
+        boxShadow:
+          '0px 1px 5px rgba(0, 0, 0, 0.03), -2px 4px 15px rgba(0, 0, 0, 0.06)',
       },
       body: {
         p: '10px 12px',

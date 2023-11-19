@@ -1,9 +1,8 @@
 import { numberInputAnatomy } from '@chakra-ui/anatomy';
 import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react';
 
-const { definePartsStyle, defineMultiStyleConfig } = createMultiStyleConfigHelpers(
-  numberInputAnatomy.keys
-);
+const { definePartsStyle, defineMultiStyleConfig } =
+  createMultiStyleConfigHelpers(numberInputAnatomy.keys);
 
 import { Input } from '@/theme/components/input';
 
