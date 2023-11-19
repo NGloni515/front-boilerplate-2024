@@ -6,7 +6,7 @@ export const FullScreenSpinner = (props: FlexProps) => (
       thickness="4px"
       speed="0.65s"
       emptyColor="blue.100"
-      color="blue.600"
+      color="indigo.600"
       size="xl"
     />
   </Flex>

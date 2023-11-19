@@ -60,7 +60,7 @@ export function InputBase({
         _hover={{ cursor: 'pointer' }}
       >
         {label}
-        {requiredSign && <Text color="blue.600">*</Text>}
+        {requiredSign && <Text color="indigo.600">*</Text>}
       </FormLabel>
       <InputGroup>
         {leftAddon}

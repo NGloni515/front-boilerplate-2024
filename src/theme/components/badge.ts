@@ -8,9 +8,9 @@ export const Badge: ComponentStyleConfig = {
     textTransform: 'capitalize',
   },
   variants: {
-    blue: {
-      color: 'blue.600',
-      bg: 'blue.200',
+    indigo: {
+      color: 'indigo.600',
+      bg: 'indigo.200',
     },
   },
   defaultProps: {},

@@ -6,8 +6,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import theme from '@/theme';
 
-// import { AuthProvider } from '@/libs/auth';
-
 type Props = { children: React.ReactNode };
 
 const queryClient = new QueryClient();

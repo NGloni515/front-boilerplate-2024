@@ -7,6 +7,9 @@ export const globalStyles = {
     body: '"Times New Roman", sans-serif',
   },
   colors: {
+    indigo: {
+      600: '#4F46E5',
+    },
     blue: {
       100: '#F3F8FF',
       200: '#E6EFFE',

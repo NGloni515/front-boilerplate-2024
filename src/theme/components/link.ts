@@ -4,7 +4,7 @@ export const Link: ComponentStyleConfig = {
   baseStyle: {
     textDecoration: 'none',
     boxShadow: 'none',
-    color: 'blue.600',
+    color: 'indigo.600',
     _focus: {
       boxShadow: 'none',
     },

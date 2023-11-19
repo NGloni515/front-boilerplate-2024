@@ -9,15 +9,15 @@ export const Button: ComponentStyleConfig = {
   variants: {
     solid: {
       fontSize: '14px',
-      bg: 'blue.600',
+      bg: 'indigo.600',
       color: 'white',
       _active: {
-        bg: 'blue.700',
+        bg: 'indigo.600',
       },
       _hover: {
-        bg: 'blue.600',
+        bg: 'indigo.600',
         _disabled: {
-          bg: 'blue.600',
+          bg: 'indigo.600',
         },
       },
     },
@@ -29,7 +29,7 @@ export const Button: ComponentStyleConfig = {
       fontSize: '14px',
       borderRadius: '50px',
       bg: 'secondaryGray.300',
-      color: 'blue.600',
+      color: 'indigo.600',
       _active: { bg: 'secondaryGray.300' },
       _hover: {
         bg: 'secondaryGray.200',

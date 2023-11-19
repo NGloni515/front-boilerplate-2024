@@ -37,10 +37,10 @@ export const Pagination = {
 
     'li.selected': {
       a: {
-        bg: 'blue.600',
+        bg: 'indigo.600',
         color: 'white',
         _hover: {
-          bg: 'blue.600',
+          bg: 'indigo.600',
         },
       },
     },

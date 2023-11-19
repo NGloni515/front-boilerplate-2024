@@ -1,6 +1,5 @@
 import { Button, Flex, Heading, Text, Checkbox } from '@chakra-ui/react';
 import { Formik } from 'formik';
-import { MdOutlineArrowCircleDown } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 
@@ -41,14 +40,14 @@ export function Login() {
   };
 
   return (
-    <AuthLayout title="Log in">
+    <AuthLayout title="Sign in">
       <Flex direction="column" gap={9}>
         <Flex direction="column">
-          <Heading variant="h4" mb={2}>
-            Login
+          <Heading variant="h5" mb={2}>
+            Welcome Back!
           </Heading>
           <Text variant="light" fontSize="md">
-            Enter your email and password to enter
+            Please enter your credentials to sign in!
           </Text>
         </Flex>
         <Formik<LoginFormValues>
@@ -79,7 +78,7 @@ export function Login() {
                     requiredSign
                   />
                   <Flex justify="space-between">
-                    <Checkbox color={'gray.500'}>Stay signed please</Checkbox>
+                    <Checkbox color={'gray.500'}>Remember Me</Checkbox>
                     <NavLink to="/forgot-password">Forgot password?</NavLink>
                   </Flex>
                   <Button
@@ -87,13 +86,8 @@ export function Login() {
                     type="submit"
                     isLoading={login.isPending}
                     isDisabled={!dirty}
-                    rightIcon={
-                      <MdOutlineArrowCircleDown
-                        style={{ transform: 'rotate(-90deg)' }}
-                      />
-                    }
                   >
-                    Log In
+                    Sign In
                   </Button>
                 </Flex>
               </form>
