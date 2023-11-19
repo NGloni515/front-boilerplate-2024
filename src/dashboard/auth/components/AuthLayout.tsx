@@ -66,7 +66,7 @@ export default function AuthLayout({ children, title, description }: Props) {
             <Box w={[null, '420px']}>{children}</Box>
           </Flex>
           <Text size="paragraph-1" color="gray.600">
-            &nbsp; Copyright © 2023 APP
+            &nbsp; Copyright © 2023 Skuldev
           </Text>
         </Flex>
       </Flex>

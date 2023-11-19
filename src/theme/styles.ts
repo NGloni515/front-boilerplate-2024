@@ -3,8 +3,8 @@ import { mode } from '@chakra-ui/theme-tools';
 
 export const globalStyles = {
   fonts: {
-    heading: '"Times New Roman", sans-serif',
-    body: '"Times New Roman", sans-serif',
+    heading: 'Poppins, sans-serif',
+    body: 'Poppins, sans-serif',
   },
   colors: {
     indigo: {
@@ -124,14 +124,14 @@ export const globalStyles = {
       body: {
         overflowX: 'hidden',
         bg: mode('white', 'navy.900')(props),
-        fontFamily: '"Times New Roman", sans-serif',
+        fontFamily: '"Poppins", sans-serif',
         letterSpacing: '0.16px',
       },
       input: {
         color: 'gray.700',
       },
       html: {
-        fontFamily: '"Times New Roman", sans-serif',
+        fontFamily: '"Poppins", sans-serif',
       },
       p: {},
       button: {
