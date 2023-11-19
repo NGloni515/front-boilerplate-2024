@@ -66,6 +66,7 @@ export function Login() {
                     type="email"
                     size="lg"
                     placeholder="Enter your email"
+                    formLabelProps={{ fontSize: 'small' }}
                     requiredSign
                   />
                   <Input
@@ -75,6 +76,7 @@ export function Login() {
                     type="password"
                     size="lg"
                     placeholder="Enter your password"
+                    formLabelProps={{ fontSize: 'small' }}
                     requiredSign
                   />
                   <Flex justify="space-between">

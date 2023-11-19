@@ -3,6 +3,7 @@ import {
   FormErrorMessage,
   FormHelperText,
   FormLabel,
+  FormLabelProps,
   IconButton,
   InputGroup,
   InputRightElement,
@@ -27,6 +28,7 @@ export type InputBaseProps = {
   rightAddon?: JSX.Element;
   leftElement?: JSX.Element;
   rightElement?: JSX.Element;
+  formLabelProps?: FormLabelProps;
 };
 
 type Props = { children: ReactNode } & InputBaseProps;
@@ -45,6 +47,7 @@ export function InputBase({
   leftElement,
   rightAddon,
   rightElement,
+  formLabelProps,
 }: Props) {
   const { errors, touched } = useFormikContext();
   const fieldHasErrors =
@@ -54,10 +57,11 @@ export function InputBase({
     <FormControl id={id} isInvalid={fieldHasErrors}>
       <FormLabel
         display="flex"
-        fontSize="2xs"
+        fontSize="xs"
         color="secondaryGray.900"
         fontWeight="bold"
         _hover={{ cursor: 'pointer' }}
+        {...formLabelProps}
       >
         {label}
         {requiredSign && <Text color="indigo.600">*</Text>}
