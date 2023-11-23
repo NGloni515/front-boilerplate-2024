@@ -7,6 +7,7 @@ import { createNotFoundRoutes } from '@/utils/createNotFoundRoutes';
 import { canAccessRoutes } from '@/utils/getUnprotectedRoutes';
 
 import { authRoutes } from './auth';
+import { dashboardOnboardingRoutes, dashboardRoutes } from './dashboard';
 
 export const AppRoutes = () => {
   const { data: user } = useUser();
@@ -22,7 +23,12 @@ export const AppRoutes = () => {
     }
   }, [location]);
 
+  const protectedRoutes = user ? [dashboardOnboardingRoutes] : [];
+  const onboardingCompletedRoutes = [dashboardRoutes];
+
   const element = useRoutes([
+    ...onboardingCompletedRoutes,
+    ...protectedRoutes,
     authRoutes,
     ...createNotFoundRoutes(user ? '/dashboard/home' : '/login'),
   ]);
