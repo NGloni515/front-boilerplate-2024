@@ -37,7 +37,7 @@
     "zustand": "^4.4.6"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "ESLINT_NO_DEV_ERRORS=true craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"

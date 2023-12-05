@@ -19,7 +19,6 @@ import {
   MdOutlineHome,
   MdOutlineGroup,
   MdOutlineAccountBox,
-  MdOutlineInsertChartOutlined,
   MdOutlineSettings,
 } from 'react-icons/md';
 import { useLocation } from 'react-router-dom';
@@ -55,7 +54,6 @@ const myAccountLinks = {
   icon: MdOutlineAccountBox,
   children: [
     { name: 'Settings', path: 'settings/logo', icon: MdOutlineSettings },
-    { name: 'Balance', path: 'balance', icon: MdOutlineInsertChartOutlined },
   ],
 };
 

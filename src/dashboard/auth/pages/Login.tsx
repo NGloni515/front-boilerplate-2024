@@ -19,7 +19,7 @@ const initialValues: LoginFormValues = {
 
 export const validationSchema = Yup.object().shape({
   email: Yup.string()
-    .email('Must be a valid email')
+    // .email('Must be a valid email')
     .required('This field is required'),
   password: Yup.string().required('This field is required'),
 });
